@@ -5,7 +5,7 @@ var app = express()
 app.get("/search/*", function(req, res){
   	var q=req.url.split('/search/')[1]
     //res.send({"search":q})
-    res.send(process.end.cx)
+    res.send(process.env.cx)
 })
 
 app.use('/*', express.static(__dirname + '/public'));
