@@ -10,4 +10,7 @@ app.get("/search/*", function(req, res){
 
 app.use('/*', express.static(__dirname + '/public'));
 
-app.listen(process.env.PORT || 8080)
+server.listen(process.env.PORT || 8080, process.env.IP || "0.0.0.0", function() {
+  var addr = server.address();
+  console.log("AUTAX available at ", addr.address + ":" + addr.port);
+});
