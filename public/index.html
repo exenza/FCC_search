@@ -1,9 +1,22 @@
 <html>
 <head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<title>FCC Search</title>
+	<style>
+	html {
+		margin-left: 10px;
+	}
+	</style>
 </head>
 <body>
-	<h1>FCC Search</h1>
-	<div></div>
+	<h1>FCC Imace Search</h1>
+	<div>
+		This application is querying Google Custom Search API and return results in JSON.
+		<br>To search head to <b>/search/<i>query</i></b> followed by your query.
+		<br>For example <b><a href="/search/beach">/search/beach</a></b> will return beach images.
+		<br>It's as well possible to query the last 10 searches here: <b><a href="/latest">/latest</a></b>
+		<hr>
+		This excercise has been developed following FreeCodeCamp challenge: <a href="https://www.freecodecamp.com/challenges/image-search-abstraction-layer" target="blank">https://www.freecodecamp.com/challenges/image-search-abstraction-layer</a>
+	</div>
 </body>
 </html>
